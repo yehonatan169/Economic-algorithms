@@ -57,9 +57,9 @@ def egalitarian_allocation(valuations: List[List[int]]) -> List[List[int]]:
             new_allocation[i].append(current_index)
             queue.append((new_state, new_allocation))
     # # הדפסה
-    for player, items in enumerate(best_allocation):
-        value = sum(valuations[player][item] for item in items)
-        print(f"Player {player} gets items {', '.join(map(str, items))} with value {value}")
+    # for player, items in enumerate(best_allocation):
+    #     value = sum(valuations[player][item] for item in items)
+    #     print(f"Player {player} gets items {', '.join(map(str, items))} with value {value}")
     return best_allocation
 
 egalitarian_allocation([[4, 5, 6, 7, 8], [8, 7, 6, 5, 4]])
